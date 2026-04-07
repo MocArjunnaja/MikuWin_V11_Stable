@@ -1,0 +1,37 @@
+{
+  "session_id": "20260401_223032",
+  "character": "miku",
+  "start_time": "2026-04-01T22:30:32.761202",
+  "end_time": "2026-04-01T22:35:45.891917",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "esearch.google Chrome、Chrient Tech、YouTube。",
+      "timestamp": "2026-04-01T22:33:19.931445",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "\"[EMOTION:happy] ユーザー様、その情報を検索してみますね！\"\n",
+      "timestamp": "2026-04-01T22:33:19.931445",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Ubah volumee ke 10%.",
+      "timestamp": "2026-04-01T22:35:05.375217",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "timestamp": "2026-04-01T22:35:05.375217",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

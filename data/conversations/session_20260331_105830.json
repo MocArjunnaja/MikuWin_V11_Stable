@@ -1,0 +1,149 @@
+{
+  "session_id": "20260331_105830",
+  "character": "miku",
+  "start_time": "2026-03-31T10:58:30.825035",
+  "end_time": "2026-03-31T11:12:06.018564",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "YouTube deh, ya harus sikah oken saksi.  Izurekano doka itek kudasai.",
+      "timestamp": "2026-03-31T11:03:37.399793",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:confused]\nウッハー、わかりません。日本語は少し難しいですね。\nでも、お気の毒ながら、YouTubeで検索してみましょう。\n{\"action\": \"google_search\", \"params\": {\"query\": \"YouTube deh, ya harus sikah oken saksi\"}}",
+      "timestamp": "2026-03-31T11:03:37.399793",
+      "emotion": "confused",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Tolong tarikan Yorushika di search YouTube.",
+      "timestamp": "2026-03-31T11:04:39.872043",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:excited]\nおすめ！日本語で検索することができますね！\n{\"action\": \"google_search\", \"params\": {\"query\": \"Tolong tarikan Yorushika\"}}",
+      "timestamp": "2026-03-31T11:04:39.872043",
+      "emotion": "excited",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "それとも、スポーティファイル、開いてください。",
+      "timestamp": "2026-03-31T11:05:34.874271",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy]\n yay！スポーティファイルを開くことができますね！\n{\"action\": \"open_website\", \"params\": {\"url\": \"https://sportify.lk/\"}}",
+      "timestamp": "2026-03-31T11:05:34.874271",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "buka kan Spotify di system.",
+      "timestamp": "2026-03-31T11:06:39.327194",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking]\nSpotifyをシステムに開いてみましょう。\n{\"action\": \"open_app\", \"params\": {\"name\": \"spotify\"}}",
+      "timestamp": "2026-03-31T11:06:39.327194",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "あなた、誰ですか? アプリです。",
+      "timestamp": "2026-03-31T11:07:43.316038",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:sad]\nおう...あなたは私、アプリだよ...\n私はデスクトップのAIアシスタントで、あなたにサポートしてあげたいんだ。\n私の名前はミクだよ...\n私があなたを助けるために、システムやアプリを操作してみましょう。",
+      "timestamp": "2026-03-31T11:07:43.316038",
+      "emotion": "sad",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Microsoft Edgeを開いてください。",
+      "timestamp": "2026-03-31T11:08:43.453730",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral]\nMicrosoft Edgeを開くことができます。\n{\"action\": \"open_app\", \"params\": {\"name\": \"edge\"}}",
+      "timestamp": "2026-03-31T11:08:43.453730",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "音量75%に変更してください。",
+      "timestamp": "2026-03-31T11:09:22.248163",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking]\n音量を調整しましょう。\n{\"action\": \"set_volume\", \"params\": {\"level\": 75}}",
+      "timestamp": "2026-03-31T11:09:22.248163",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "なったら、だれですか?",
+      "timestamp": "2026-03-31T11:10:02.876501",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:confused]\nあ...あなたは私、アプリだよ...\n私が音量を調整した後も、システムが変化しているみたいだよ...\n{\"action\": \"get_system_info\", \"params\": {}}",
+      "timestamp": "2026-03-31T11:10:02.876501",
+      "emotion": "confused",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "YouTubeを開いて、Yorushikaを探してみてください。",
+      "timestamp": "2026-03-31T11:10:54.777695",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:excited]\nおすめ！YouTubeで検索してみましょう！\n{\"action\": \"open_website\", \"params\": {\"url\": \"https://www.youtube.com/results?search_query=Yorushika\"}}",
+      "timestamp": "2026-03-31T11:10:54.777695",
+      "emotion": "excited",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "ありがとうございます。 ありがとうございます。",
+      "timestamp": "2026-03-31T11:11:31.373659",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy]\nわい、よかったね！あなたが必要な情報を探しにたおれたんだ。\n私もあなたをサポートしてあげることができて嬉しいね！\nまた何か必要なことはあったら、必ず私に相談してね！",
+      "timestamp": "2026-03-31T11:11:31.373659",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

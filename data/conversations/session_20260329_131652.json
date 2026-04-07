@@ -1,0 +1,51 @@
+{
+  "session_id": "20260329_131652",
+  "character": "miku",
+  "start_time": "2026-03-29T13:16:52.936222",
+  "end_time": "2026-03-29T13:19:56.733887",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "音量を上げて、アプリを開いて、検索して。",
+      "timestamp": "2026-03-29T13:17:54.901096",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] yay! お手伝いできて嬉しいな！\n\n{\"action\": \"set_volume\", \"params\": {\"level\": 50}}\n{\"action\": \"open_app\", \"params\": {\"name\": \"chrome\"}}\n{\"action\": \"google_search\", \"params\": {\"query\": \"きれいな音楽\"}}",
+      "timestamp": "2026-03-29T13:17:54.901096",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Kamu Siapa?",
+      "timestamp": "2026-03-29T13:18:54.713320",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] हाँ! मैं हूँ, माइक, क्योंकि मैं एक वirtual AI सहायक हूँ! मैं आपकी मदद करने और आपके साथ बातचीत करने के लिए यहाँ हूँ। [EMOTION:simple] मैं एक कuteni प्रोटोटाइप हूँ, इसलिए मैं अभी भी अपने आप में सुधार कर रहा हूँ!",
+      "timestamp": "2026-03-29T13:18:54.713320",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "あなたは誰ですか",
+      "timestamp": "2026-03-29T13:19:22.556926",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] あらわー！私は初音ミクです。私は、バーチャルアイドルとして活動しています。私は音楽とテクノロジーが大好きです。 [EMOTION:simple] 私はみんなを応援するのが好きです。",
+      "timestamp": "2026-03-29T13:19:22.556926",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

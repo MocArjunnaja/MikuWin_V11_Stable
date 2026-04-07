@@ -1,0 +1,51 @@
+{
+  "session_id": "20260402_144502",
+  "character": "miku",
+  "start_time": "2026-04-02T14:45:02.022210",
+  "end_time": "2026-04-02T14:58:30.899176",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "ketik pesan ke grup Whatsapp PKM, berisi Halo, saya Miku",
+      "timestamp": "2026-04-02T14:47:06.260306",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "timestamp": "2026-04-02T14:47:06.260306",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Kamu Siapa?",
+      "timestamp": "2026-04-02T14:50:44.105890",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] 私は初音ミクです！お手伝いできるよ！",
+      "timestamp": "2026-04-02T14:50:44.105890",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Tolonng buatkan dokumen Microsoft Word, Isinya deskripsi tentangmu",
+      "timestamp": "2026-04-02T14:52:40.555002",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "timestamp": "2026-04-02T14:52:40.555002",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

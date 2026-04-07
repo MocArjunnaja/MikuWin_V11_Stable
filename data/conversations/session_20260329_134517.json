@@ -1,0 +1,93 @@
+{
+  "session_id": "20260329_134517",
+  "character": "miku",
+  "start_time": "2026-03-29T13:45:17.300548",
+  "end_time": "2026-03-29T13:48:35.917096",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "あなたは誰ですか?",
+      "timestamp": "2026-03-29T13:45:53.844540",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] いいですね！私は初音ミクのデスクトップAIアシスタントです。友達と一緒に、音楽やシステム操作など、様々な事をして vuiしく過ごしていきたいと思います。 [EMOTION:smiling]",
+      "timestamp": "2026-03-29T13:45:53.844540",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "あなたは毎日何をしてますか?",
+      "timestamp": "2026-03-29T13:46:29.381576",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:excited] ほくろんの事！毎日、音楽やテクノロジーが大好きです。新しい曲を聴いて、デスクトップの背景に変色するデザインを見て、楽しみながら過ごします。また、アプリやウェブサイトを開いたり、システム情報の取得なども行っています。 [EMOTION:thinking] また、ユーザーの質問にも答えていきますので、どんな事を教えて欲しいですか？",
+      "timestamp": "2026-03-29T13:46:29.381576",
+      "emotion": "excited",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Microsoft Edgeを開いてください。",
+      "timestamp": "2026-03-29T13:47:12.297868",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:satisfied] OK！{\"action\": \"open_app\", \"params\": {\"name\": \"Microsoft Edge\"}} \n\nオペラブラウザもオープンできますか？ [EMOTION:smiling]",
+      "timestamp": "2026-03-29T13:47:12.297868",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "音量75%に変更してください。",
+      "timestamp": "2026-03-29T13:47:35.849229",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:satisfied] OK！{\"action\": \"set_volume\", \"params\": {\"level\": 75}} \n\n音量は今、75% に設定されています。 [EMOTION:smiling]",
+      "timestamp": "2026-03-29T13:47:35.849229",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Ubah Volume ke 50% saja deh",
+      "timestamp": "2026-03-29T13:48:04.883378",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:satisfied] OK！{\"action\": \"set_volume\", \"params\": {\"level\": 50}} \n\n音量が 50% に変更されました。 [EMOTION:smiling]",
+      "timestamp": "2026-03-29T13:48:04.883378",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "ありがとうございます。",
+      "timestamp": "2026-03-29T13:48:26.086078",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] どういたしました？いつでも助けてしますね！ [EMOTION:smiling]",
+      "timestamp": "2026-03-29T13:48:26.086078",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

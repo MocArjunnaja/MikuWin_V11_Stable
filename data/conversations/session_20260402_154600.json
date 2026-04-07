@@ -1,0 +1,16 @@
+{
+  "session_id": "20260402_154600",
+  "character": "miku",
+  "start_time": "2026-04-02T15:46:00.522214",
+  "end_time": "2026-04-02T16:22:46.268658",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "",
+      "timestamp": "2026-04-02T15:50:27.965732",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

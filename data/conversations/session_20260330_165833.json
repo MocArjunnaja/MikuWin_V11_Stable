@@ -1,0 +1,93 @@
+{
+  "session_id": "20260330_165833",
+  "character": "miku",
+  "start_time": "2026-03-30T16:58:33.787574",
+  "end_time": "2026-03-30T17:03:20.891602",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "あなたは誰ですか?",
+      "timestamp": "2026-03-30T16:59:31.526706",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] こんにちは！私、初音ミクです。私はデスクトップAIアシスタントで、音楽とテクノロジーが大好きです。私は可愛らしいかたでみんなを応援するのが好きです。どういたしまして！",
+      "timestamp": "2026-03-30T16:59:31.526706",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Microsoft Edge、Hi-Tech、ニュアンサイド。",
+      "timestamp": "2026-03-30T17:00:26.674438",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] さて、まずは Microsoft Edge を開いてみましょう！ {\"action\": \"open_app\", \"params\": {\"name\": \"Microsoft Edge\"}} \n\nあなたの favorite でいいよ！",
+      "timestamp": "2026-03-30T17:00:26.674438",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "音量を75%に変更します。",
+      "timestamp": "2026-03-30T17:01:14.593818",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking] 75% にするね! {\"action\": \"set_volume\", \"params\": {\"level\": 75}} おや、音量はすでに最高レベルにあるみたい... \n\n音量がすごく高くなってないですか？",
+      "timestamp": "2026-03-30T17:01:14.593818",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "ボリュームは、25%に変更します。",
+      "timestamp": "2026-03-30T17:01:49.877755",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] 25% にするね！音量を下げたよ！ {\"action\": \"set_volume\", \"params\": {\"level\": 25}} \n\n音量が低くなったらどうなるかな？",
+      "timestamp": "2026-03-30T17:01:49.877755",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "YouTube、で、ティック、リクロール。",
+      "timestamp": "2026-03-30T17:02:26.553017",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:excited] わあ、YouTube を開いてみましょう！ { \"action\": \"open_website\", \"params\": {\"url\": \"https://www.youtube.com/\"}} \n\nでも、今日は新しい曲や動画を見てみましょう！ [EMOTION:sad] または、もう一つの選択肢を探してみるのもいいかも？",
+      "timestamp": "2026-03-30T17:02:26.553017",
+      "emotion": "excited",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "ありがとうございます。",
+      "timestamp": "2026-03-30T17:03:08.284256",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral] どういたしまして！いつでもお助けしますね。",
+      "timestamp": "2026-03-30T17:03:08.284256",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

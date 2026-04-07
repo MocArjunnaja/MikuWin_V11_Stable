@@ -1,0 +1,23 @@
+{
+  "session_id": "20260402_135755",
+  "character": "miku",
+  "start_time": "2026-04-02T13:57:55.917001",
+  "end_time": "2026-04-02T14:04:07.272377",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "アプリを開いて、音量を下げて、音量を下げて、音量を下げて、音量を下げて、音量を下げて、音量を下げて、音量を下げて、音量を下げて、音量を下げて、音量を下げて、",
+      "timestamp": "2026-04-02T14:01:15.207894",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:confused] どのアプリを開きますか？音量をどのくらい下げたいですか？教えてください！",
+      "timestamp": "2026-04-02T14:01:15.207894",
+      "emotion": "confused",
+      "metadata": null
+    }
+  ]
+}

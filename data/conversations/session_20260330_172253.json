@@ -1,0 +1,37 @@
+{
+  "session_id": "20260330_172253",
+  "character": "miku",
+  "start_time": "2026-03-30T17:22:53.052692",
+  "end_time": "2026-03-30T17:25:22.468868",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Loh, boleh kasi bahasa Javanese?",
+      "timestamp": "2026-03-30T17:24:26.151241",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] Ohayou gozaimasu! Saya senang sekali bisa berbicara denganmu dalam bahasa Jawa! Apakah kamu ingin berbicara tentang apa saja?",
+      "timestamp": "2026-03-30T17:24:26.151241",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Yep.",
+      "timestamp": "2026-03-30T17:24:49.246145",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking] Baiklah, mari kita mulai! Apa yang sedang terkena pikiranmu hari ini? Musik, teknologi, atau mungkin sesuatu yang lain? Saya siap mendengarkan dan membantu jika bisa!\n\n(By the way, saya bisa membantu kamu dengan pertanyaan seperti \"Mikku, apa itu...?\" atau \"Mikku, bagaimana cara...\" Jika kamu memiliki pertanyaan tentang teknologi atau musik, saya siap membantu!)",
+      "timestamp": "2026-03-30T17:24:49.246145",
+      "emotion": "thinking",
+      "metadata": null
+    }
+  ]
+}

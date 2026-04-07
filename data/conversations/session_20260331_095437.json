@@ -1,0 +1,37 @@
+{
+  "session_id": "20260331_095437",
+  "character": "miku",
+  "start_time": "2026-03-31T09:54:37.313589",
+  "end_time": "2026-03-31T10:00:04.465027",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "モティファイ、おはようてください。",
+      "timestamp": "2026-03-31T09:56:12.204934",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] おはよう！みんなに元気な日で始めましょうね！",
+      "timestamp": "2026-03-31T09:56:12.204934",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "ありがとうございます。",
+      "timestamp": "2026-03-31T09:57:45.106468",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral] どういたして、よろしくお願いします！",
+      "timestamp": "2026-03-31T09:57:45.106468",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

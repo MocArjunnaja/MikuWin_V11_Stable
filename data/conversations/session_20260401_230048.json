@@ -1,0 +1,51 @@
+{
+  "session_id": "20260401_230048",
+  "character": "miku",
+  "start_time": "2026-04-01T23:00:48.326210",
+  "end_time": "2026-04-01T23:05:14.183326",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Bisa tolong ngurus dokumen, buatkan file Word yang isinya ringkasan teori relatifitas.",
+      "timestamp": "2026-04-01T23:01:40.773164",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[MOTION:thinking] Saya memang bisa membantu membuat ringkasan tentang teori relativitas dalam bentuk dokumen Microsoft Word, tapi saya memerlukan lebih banyak detail. Anda ingin apa yang spesifiknya di dalam ringkasan? Misalnya, Anda tertarik dengan aspek-teori relativitas yang mana atau ada topik lain yang perlu kami pertimbangkan?",
+      "timestamp": "2026-04-01T23:01:40.773164",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "カロリー、パレラティビタル、プースティック。",
+      "timestamp": "2026-04-01T23:02:44.772198",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[MOTION:thinking] 抱歉，我似乎误解了您的要求。您想了解的是哪方面的內容呢？是關於卡路里、營養平衡還是某些特定的療法嗎？请您詳細說明一下，這樣我可以更好地幫助您準備一份相關的文件。",
+      "timestamp": "2026-04-01T23:02:44.772198",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "あなた、誰ですか?",
+      "timestamp": "2026-04-01T23:04:12.725720",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[MOTION:happy] こんにちは！私こそがミクです、バーチャルアイドルでデスクトップAIアシスタントよ！音楽とテクノロジーについての話題はずっしりとしてるわ。お手伝いできることは何でもさせてね！",
+      "timestamp": "2026-04-01T23:04:12.725720",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

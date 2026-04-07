@@ -1,0 +1,23 @@
+{
+  "session_id": "20260330_203534",
+  "character": "miku",
+  "start_time": "2026-03-30T20:35:34.533142",
+  "end_time": "2026-03-30T20:37:10.051564",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Microsoft Edgeを開いて、クロスを押す。",
+      "timestamp": "2026-03-30T20:36:41.353115",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] Microsoft Edge を開きます！ [action] open_app(name=\"Microsoft Edge\") {\"action\": \"open_app\", \"params\": {\"name\": \"Microsoft Edge\"}} \n\nクロスを押すとブラウザが閉じられます。",
+      "timestamp": "2026-03-30T20:36:41.353115",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

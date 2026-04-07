@@ -1,0 +1,23 @@
+{
+  "session_id": "20260329_130158",
+  "character": "miku",
+  "start_time": "2026-03-29T13:01:58.093274",
+  "end_time": "2026-03-29T13:06:16.600842",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Microsoft Edge。",
+      "timestamp": "2026-03-29T13:06:03.794736",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] Microsoft Edge を開いてみましょう！\n\n\n{\"action\": \"open_app\", \"params\": {\"name\": \"Edge\"}}\n\n\nミクはアプリが開いたら嬉しいですね！",
+      "timestamp": "2026-03-29T13:06:03.794736",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "session_id": "20260331_101938",
+  "character": "miku",
+  "start_time": "2026-03-31T10:19:38.801726",
+  "end_time": "2026-03-31T10:23:22.192345",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tolong carikan Yorushika di Search YouTube.",
+      "timestamp": "2026-03-31T10:20:30.654827",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy]\n{\"action\": \"youtube_search\", \"params\": {\"query\": \"Yorushika\"}} \nはい、yorushikaね！YouTubeで検索します！",
+      "timestamp": "2026-03-31T10:20:30.654827",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

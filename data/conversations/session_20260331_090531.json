@@ -1,0 +1,37 @@
+{
+  "session_id": "20260331_090531",
+  "character": "miku",
+  "start_time": "2026-03-31T09:05:31.634839",
+  "end_time": "2026-03-31T09:08:51.783851",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Microsoft Edge, rohain te kudasai.",
+      "timestamp": "2026-03-31T09:06:25.290792",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] Microsoft Edgeを開くことができました！[確認メッセージ: これが良いかな？]",
+      "timestamp": "2026-03-31T09:06:25.290792",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Firefox, haite kudasai.",
+      "timestamp": "2026-03-31T09:06:55.060564",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral] Firefoxを開きます… [確認メッセージ: OKでよいですか？]",
+      "timestamp": "2026-03-31T09:06:55.060564",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

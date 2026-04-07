@@ -1,0 +1,23 @@
+{
+  "session_id": "20260330_213323",
+  "character": "miku",
+  "start_time": "2026-03-30T21:33:23.847893",
+  "end_time": "2026-03-30T21:40:30.004945",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "C:\\Users\\Arjun\\miniconda3\\envs\\miku\\python.exe \"e:/A DIVA PROJECT/MikuWin/v5/miku.py\"",
+      "timestamp": "2026-03-30T21:40:08.381121",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral]\n\nユーザーがシステムを起動しています。\n\n新しいコンソールウィンドウが開いています。",
+      "timestamp": "2026-03-30T21:40:08.381121",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

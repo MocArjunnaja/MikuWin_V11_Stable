@@ -1,0 +1,65 @@
+{
+  "session_id": "20260402_000730",
+  "character": "miku",
+  "start_time": "2026-04-02T00:07:30.796533",
+  "end_time": "2026-04-02T00:10:14.243223",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "buka Windows Explorer, kemudian tari folder kuliah.",
+      "timestamp": "2026-04-02T00:08:51.173006",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[mined]\n",
+      "timestamp": "2026-04-02T00:08:51.173006",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "System Observation:\nAction 'open_folder' result: SUKSES - Membuka フォルダ名...\nSilakan beritahu pengguna mengenai hasil ini.",
+      "timestamp": "2026-04-02T00:08:53.391617",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[mined]\n",
+      "timestamp": "2026-04-02T00:08:53.391617",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "また、あれですか?",
+      "timestamp": "2026-04-02T00:09:47.821986",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[mined]\n\"[EMOTION:sad] ごめんなさい、うまくいきませんでした...もう一度試してみましょう。フォルダ 'kuliah' を開くことはできるでしょうか？\"\n",
+      "timestamp": "2026-04-02T00:09:47.821986",
+      "emotion": "sad",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "System Observation:\nAction 'open_folder' result: SUKSES - Membuka folder kuliah...\nSilakan beritahu pengguna mengenai hasil ini.",
+      "timestamp": "2026-04-02T00:09:49.210128",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[mined]\n\"[EMOTION:happy] お待たせしました！フォルダ 'kuliah' を開くことができましたよ！\"",
+      "timestamp": "2026-04-02T00:09:49.210128",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

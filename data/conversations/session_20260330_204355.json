@@ -1,0 +1,65 @@
+{
+  "session_id": "20260330_204355",
+  "character": "miku",
+  "start_time": "2026-03-30T20:43:55.747117",
+  "end_time": "2026-03-30T20:51:48.492010",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "よ、七十五、八、三、六、三、四、五、四、四、四、四、四、四、四、四、四、四、四、四、四、四、四、四、四、四、四、四、四、四、",
+      "timestamp": "2026-03-30T20:46:39.581333",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:confused] うーん、数が何を表すの？数字だけがあって、その意味はわからないね。",
+      "timestamp": "2026-03-30T20:46:39.581333",
+      "emotion": "confused",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "WiFiを開いてください。",
+      "timestamp": "2026-03-30T20:49:46.406259",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral] {\"action\": \"open_website\", \"params\": {\"url\": \"https://www.google.com\"}} \"ネットワークを使用してください。\"",
+      "timestamp": "2026-03-30T20:49:46.406259",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "その意味は、スポーティフォンです。",
+      "timestamp": "2026-03-30T20:50:59.912322",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] あっはい！わかった！{\"action\": \"open_app\", \"params\": {\"name\": \"spotify\"}} \"音楽を再生するには、Spotifyを使いますね!\"",
+      "timestamp": "2026-03-30T20:50:59.912322",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "ありがとうございます。",
+      "timestamp": "2026-03-30T20:51:23.041485",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking] うーん...何か他のことが必要なのでしょうか？",
+      "timestamp": "2026-03-30T20:51:23.041485",
+      "emotion": "thinking",
+      "metadata": null
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "session_id": "20260402_125116",
+  "character": "miku",
+  "start_time": "2026-04-02T12:51:16.657520",
+  "end_time": "2026-04-02T12:57:04.890545",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tolong kirim pesan WA di grup yang bernama PKM.",
+      "timestamp": "2026-04-02T12:53:46.656921",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking] PKMグループへのメッセージを送信します！メッセージの内容をお知らせくださいね！",
+      "timestamp": "2026-04-02T12:53:46.656921",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "スクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスクリーンスク。",
+      "timestamp": "2026-04-02T12:55:58.363424",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:excited] PKMグループへメッセージを送信します！  \n",
+      "timestamp": "2026-04-02T12:55:58.363424",
+      "emotion": "excited",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "System Observation:\nAction 'send_whatsapp_message' result: SUKSES - Gagal: Database kontak (contacts_db.json) tidak ditemukan di folder data. Silakan parse CSV Anda dulu.\nSilakan beritahu pengguna mengenai hasil ini.",
+      "timestamp": "2026-04-02T12:56:48.083750",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:sad] PKMグループへのメッセージ送信に失敗しました。contacts_db.jsonがデータフォルダに存在しないので、まずはCSVファイルを解析してくださいね。",
+      "timestamp": "2026-04-02T12:56:48.083750",
+      "emotion": "sad",
+      "metadata": null
+    }
+  ]
+}

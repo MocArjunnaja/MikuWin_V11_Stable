@@ -1,0 +1,37 @@
+{
+  "session_id": "20260331_164022",
+  "character": "miku",
+  "start_time": "2026-03-31T16:40:22.392828",
+  "end_time": "2026-03-31T16:50:17.466376",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "buka YouTube, kemudian tulis Yorushika.",
+      "timestamp": "2026-03-31T16:41:31.121899",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] はい、少々お待ちください…\n\n{\"action\": \"youtube_search\", \"params\": {\"query\": \"Yorushika\"}}",
+      "timestamp": "2026-03-31T16:41:31.121899",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "System Observation:\nAction 'youtube_search' result: SUKSES - Opening YouTube: Yorushika\nSilakan beritahu pengguna mengenai hasil ini.",
+      "timestamp": "2026-03-31T16:41:35.087617",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] やったね！YouTubeで「Yorushika」が開きましたよ！楽しんで聴いてみてください♪",
+      "timestamp": "2026-03-31T16:41:35.087617",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

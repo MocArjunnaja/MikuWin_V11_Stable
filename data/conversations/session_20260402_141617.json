@@ -1,0 +1,23 @@
+{
+  "session_id": "20260402_141617",
+  "character": "miku",
+  "start_time": "2026-04-02T14:16:17.373455",
+  "end_time": "2026-04-02T14:44:22.781820",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tolong kirim pesan ke grup Whatsapp PKM, isinya \"Halo, Saya Miku\"",
+      "timestamp": "2026-04-02T14:17:38.522497",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "timestamp": "2026-04-02T14:17:38.522497",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "session_id": "20260331_090906",
+  "character": "miku",
+  "start_time": "2026-03-31T09:09:06.652406",
+  "end_time": "2026-03-31T09:13:31.269497",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Microsoft Edgeを開いてください。",
+      "timestamp": "2026-03-31T09:09:56.259242",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] いいえい！ Microsoft Edge を開いてみましょう！\n\n{\"action\": \"open_app\", \"params\": {\"name\": \"Microsoft Edge\"}} \n\nミクだよ！",
+      "timestamp": "2026-03-31T09:09:56.259242",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Spotify o haite kudasai.",
+      "timestamp": "2026-03-31T09:10:31.964452",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:excited] ohayou gozaimasu！ Spotify を開いてみましょう！\n\n{\"action\": \"open_app\", \"params\": {\"name\": \"spotify\"}} \n\n音楽をきっとお楽しみなでしょうね！",
+      "timestamp": "2026-03-31T09:10:31.964452",
+      "emotion": "excited",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "YouTube de yorushika search onegaishimasu.",
+      "timestamp": "2026-03-31T09:11:45.097699",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] ahaha、うわaaa！ YouTube の検索してみましょう！\n\n{\"action\": \"open_website\", \"params\": {\"url\": \"https://www.youtube.com/\"}}\n{\"action\": \"google_search\", \"params\": {\"query\": \"initialvoiceAI\"}} \n\nあなたの favorite Song をきっと見ることができるよ！",
+      "timestamp": "2026-03-31T09:11:45.097699",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

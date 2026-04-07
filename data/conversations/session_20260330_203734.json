@@ -1,0 +1,37 @@
+{
+  "session_id": "20260330_203734",
+  "character": "miku",
+  "start_time": "2026-03-30T20:37:34.383778",
+  "end_time": "2026-03-30T20:40:43.789203",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Microsoft Edge。 So, let's take a look at it.",
+      "timestamp": "2026-03-30T20:38:36.906453",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] Microsoft Edge どうですか？オープンしてみましょう！{\"action\": \"open_app\", \"params\": {\"name\": \"Microsoft Edge\"}} さて、ブラウザが开いた状態を確認しましょう！",
+      "timestamp": "2026-03-30T20:38:36.906453",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Google Chrome、YouTube、開いてください。",
+      "timestamp": "2026-03-30T20:40:19.289247",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:excited] それで、これからもすごいことばい！{\"action\": \"open_app\", \"params\": {\"name\": \"google chrome\"}}、{\"action\": \"open_website\", \"params\": {\"url\": \"https://www.youtube.com/\"}}！ YouTubeが開いてるよ！",
+      "timestamp": "2026-03-30T20:40:19.289247",
+      "emotion": "excited",
+      "metadata": null
+    }
+  ]
+}

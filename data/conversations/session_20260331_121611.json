@@ -1,0 +1,23 @@
+{
+  "session_id": "20260331_121611",
+  "character": "miku",
+  "start_time": "2026-03-31T12:16:11.987421",
+  "end_time": "2026-03-31T12:17:35.368179",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Microsoft Edge、Google Chrome。",
+      "timestamp": "2026-03-31T12:17:12.607752",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral]\n{\"action\": \"open_app\", \"params\": {\"name\": \"Microsoft Edge\"}} \nまたは\n{\"action\": \"open_app\", \"params\": {\"name\": \"google chrome\"}}",
+      "timestamp": "2026-03-31T12:17:12.607752",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}

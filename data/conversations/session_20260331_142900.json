@@ -1,0 +1,65 @@
+{
+  "session_id": "20260331_142900",
+  "character": "miku",
+  "start_time": "2026-03-31T14:29:00.408300",
+  "end_time": "2026-03-31T14:32:17.999507",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "Google Chrome、Microsoft Edge、Firefox。",
+      "timestamp": "2026-03-31T14:30:36.440337",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking] うーん、どれを開くかな？\n\n{\"action\": \"open_app\", \"params\": {\"name\": \"Chrome\"}} \n\n[EMOTION:neutral] サブプロセスを起動しています。",
+      "timestamp": "2026-03-31T14:30:36.440337",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "System Observation:\nAction 'open_app' result: SUKSES - Membuka Chrome...\nSilakan beritahu pengguna mengenai hasil ini.",
+      "timestamp": "2026-03-31T14:30:38.513143",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] うわー、成功です！ Chrome が成功的にオープンしましたよ！\n\nこの時点で Chrome が起動しているので、どんなタスクに使用したいですか？",
+      "timestamp": "2026-03-31T14:30:38.513143",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "音量を上げて、アプリを開いて、アプリを開いて、アプリを開いて、",
+      "timestamp": "2026-03-31T14:31:35.138493",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking] うーん、次のアクションはなにかな?\n\n{\"action\": \"set_volume\", \"params\": {\"level\": 80}} \n\n{\"action\": \"open_app\", \"params\": {\"name\": \"Chrome\"}} \n{\"action\": \"open_app\", \"params\": {\"name\": \"Microsoft Edge\"}} \n{\"action\": \"open_app\", \"params\": {\"name\": \"Firefox\"}}",
+      "timestamp": "2026-03-31T14:31:35.138493",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "System Observation:\nAction 'set_volume' result: SUKSES - Volume diatur ke 80%\nAction 'open_app' result: SUKSES - Membuka Chrome...\nAction 'open_app' result: SUKSES - Membuka Microsoft Edge...\nAction 'open_app' result: SUKSES - Membuka Firefox...\nSilakan beritahu pengguna mengenai hasil ini.",
+      "timestamp": "2026-03-31T14:31:37.942138",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] うわー、完璍です！音量が上げられ、すべてのブラウザが成功的にオープンしましたよ！\n\n音量を80%に設定して、Chrome、Microsoft Edge、Firefoxをすべて起動できました。何でもできるようになりますね！",
+      "timestamp": "2026-03-31T14:31:37.942138",
+      "emotion": "happy",
+      "metadata": null
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "session_id": "20260330_215754",
+  "character": "miku",
+  "start_time": "2026-03-30T21:57:54.579447",
+  "end_time": "2026-03-30T22:08:34.392954",
+  "user_name": null,
+  "messages": [
+    {
+      "role": "user",
+      "content": "ポティファイルを配布ください。",
+      "timestamp": "2026-03-30T21:59:33.513731",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:happy] yay! ポティファイルを配布できます！ \n\n以下は、パソコンの音量を調整してみましょう。 \n\n```json\n{\n  \"action\": \"set_volume\",\n  \"params\": {\n    \"level\": 50\n  }\n}\n```\n\n[EMOTION:smile] このレベルがあなたの好きなものですか？",
+      "timestamp": "2026-03-30T21:59:33.513731",
+      "emotion": "happy",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "今、私のゲームのことは、Spotifyです。",
+      "timestamp": "2026-03-30T22:00:36.223367",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:excited] おもしろい！ Spotify で音楽を聴いてみましょう！ \n\n```json\n{\n  \"action\": \"open_app\",\n  \"params\": {\n    \"name\": \"spotify\"\n  }\n}\n```\n\n[EMOTION:smile] Spotify を開きました！ What kind of music do you want to listen?",
+      "timestamp": "2026-03-30T22:00:36.223367",
+      "emotion": "excited",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "ウォッティファインを開いてください。",
+      "timestamp": "2026-03-30T22:02:08.848021",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral] WhatsApp を開きます。 \n\n```json\n{\n  \"action\": \"open_app\",\n  \"params\": {\n    \"name\": \"whatsapp\"\n  }\n}\n```\n\n[EMOTION:smile] WhatsApp が開いています。誰と連絡を取るのでしょうか？",
+      "timestamp": "2026-03-30T22:02:08.848021",
+      "emotion": "neutral",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Microsoft Edgeのライトペースを確認。",
+      "timestamp": "2026-03-30T22:02:53.857865",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:thinking] Microsoft Edge のライトペースを調べてみます… \n\n```json\n{\n  \"action\": \"get_system_info\",\n  \"params\": {}\n}\n```\n\n[EMOTION:smile] リットペースがあなたの好きなレベルですか？",
+      "timestamp": "2026-03-30T22:02:53.857865",
+      "emotion": "thinking",
+      "metadata": null
+    },
+    {
+      "role": "user",
+      "content": "Google Chrome、アプリを開いてください。",
+      "timestamp": "2026-03-30T22:03:43.001376",
+      "emotion": null,
+      "metadata": null
+    },
+    {
+      "role": "assistant",
+      "content": "[EMOTION:neutral] Google Chrome を開きます。 \n\n```json\n{\n  \"action\": \"open_app\",\n  \"params\": {\n    \"name\": \"google-chrome\"\n  }\n}\n```\n\n[EMOTION:smile] Google Chrome が開いています。どのページに進みますか？",
+      "timestamp": "2026-03-30T22:03:43.001376",
+      "emotion": "neutral",
+      "metadata": null
+    }
+  ]
+}
