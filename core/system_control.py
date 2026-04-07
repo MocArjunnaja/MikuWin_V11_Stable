@@ -6,7 +6,9 @@ Integrated with Automation Layer untuk YouTube, Spotify, Browser
 import subprocess
 import webbrowser
 import os
-from typing import Optional, Tuple, Dict, Any
+import re
+import shlex
+from typing import Optional, Tuple, Dict, Any, List
 from ctypes import cast, POINTER
 from comtypes import CLSCTX_ALL
 
@@ -44,10 +46,14 @@ class SystemControl:
         if AUTOMATION_AVAILABLE:
             self.automation = AutomationManager(
                 spotify_client_id=spotify_client_id,
-                spotify_client_secret=spotify_client_secret
+                spotify_client_secret=spotify_client_secret,
+                system_control=self
             )
         else:
             self.automation = None
+        
+        # Track PIDs of opened applications (Multiple instances supported)
+        self._opened_apps: Dict[str, List[int]] = {}
     
     def _init_audio(self):
         """Initialize audio interface"""
@@ -141,12 +147,32 @@ class SystemControl:
         try:
             print(f"[SystemControl] Running command: {command}")
             
-            if command.startswith("start "):
-                subprocess.Popen(command, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            else:
-                subprocess.Popen(f'start "" "{command}"', shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            # Remove "start " prefix and handle URI/Executable
+            exec_command = command
+            if exec_command.startswith("start "):
+                exec_command = exec_command[6:].strip()
             
-            return True, f"Membuka {app_name}..."
+            # Precise URI detection: Valid scheme and not a Windows drive letter
+            uri_match = re.match(r"^[a-zA-Z][a-zA-Z0-9+.\-]*:", exec_command)
+            is_uri = uri_match and len(uri_match.group(0)) > 2 # "C:" is 2 chars, "ms-settings:" is more
+            
+            if is_uri:
+                os.startfile(exec_command)
+                return True, f"Membuka {app_name} via URI..."
+            
+            # Launch executable and track PID using shlex for safe splitting
+            cmd_list = shlex.split(exec_command)
+            proc = subprocess.Popen(
+                cmd_list, 
+                stdout=subprocess.DEVNULL, 
+                stderr=subprocess.DEVNULL,
+                shell=False # Security: Disable shell
+            )
+            
+            # Store PID for close_application (append to list for multi-instance support)
+            self._opened_apps.setdefault(app_lower, []).append(proc.pid)
+            
+            return True, f"Membuka {app_name} (PID: {proc.pid})..."
         except Exception as e:
             return False, f"Gagal membuka {app_name}: {e}"
     
@@ -156,10 +182,35 @@ class SystemControl:
         app_lower = app_name.lower().strip()
         
         try:
+            # 1. Try closing by tracked PID first (Fast path, LIFO order)
+            pids = self._opened_apps.get(app_lower, [])
+            if pids:
+                pid = pids.pop()
+                if not pids:
+                    del self._opened_apps[app_lower]
+                
+                try:
+                    proc = psutil.Process(pid)
+                    if proc.is_running():
+                        proc.terminate()
+                        # Wait for process to exit
+                        try:
+                            proc.wait(timeout=5)
+                        except psutil.TimeoutExpired:
+                            proc.kill() # Force kill if necessary
+                        return True, f"Menutup {app_name} (PID: {pid})"
+                except (psutil.NoSuchProcess, psutil.AccessDenied):
+                    pass
+
+            # 2. Fallback to process iteration by name
             for proc in psutil.process_iter(['name', 'pid']):
                 proc_name = proc.info['name'].lower()
                 if app_lower in proc_name:
                     proc.terminate()
+                    try:
+                        proc.wait(timeout=2)
+                    except:
+                        proc.kill()
                     return True, f"Menutup {app_name}"
             
             return False, f"Tidak menemukan proses {app_name}"
@@ -203,8 +254,25 @@ class SystemControl:
                     return True, f"Membuka folder {path} di sistem..."
                     
         try:
-            # Fallback pakai explorer biasa jika tidak ketemu
-            subprocess.Popen(f'explorer "{path}"', shell=True)
+            # 1. Path Traversal Validation
+            # Resolve real path and check if it starts with home dir
+            real_path = os.path.realpath(path)
+            home_dir = os.path.realpath(os.path.expanduser("~"))
+            
+            # Safety Check: Limit explorer access to home directory
+            if not real_path.startswith(home_dir):
+                return False, f"Akses ditolak: Tidak diizinkan mengakses path sistem di luar home directory."
+            
+            # 2. Input Validation for dangerous characters
+            if any(c in path for c in '&|><;`'):
+                return False, f"Akses ditolak: Path mengandung karakter berbahaya."
+
+            # Fallback pakai explorer biasa jika tidak ketemu - list arguments lebih aman
+            # Jika target adalah path yang valid, gunakan os.startfile
+            if os.path.exists(path):
+                os.startfile(path)
+            else:
+                subprocess.Popen(['explorer', path])
             return True, f"Membuka {path}..."
         except Exception as e:
             return False, f"Gagal membuka folder: {e}"

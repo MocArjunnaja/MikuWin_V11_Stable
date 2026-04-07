@@ -204,35 +204,64 @@ class AIBrain:
                     "params": args
                 })
         
-        # Fallback regex manual jika AI bandel menulis JSON di content
+        # Fallback manual extraction jika AI bandel menulis JSON di content atau menggunakan tag XML
         if not function_calls and clean_response:
-            patterns = [
-                r'(\{\s*"action"\s*:\s*"[^"]+"\s*,\s*"params"\s*:\s*\{[^}]*\}\s*\})',
-                # Fallback untuk model Qwen yang senang generate format <tool_call> {"name": "action", "arguments": {...}} </tool_call>
-                r'<tool_call>\s*(\{\s*"name"\s*:\s*"[^"]+"\s*,\s*"arguments"\s*:\s*\{[^}]*\}\s*\})\s*</tool_call>',
-            ]
-            for pattern in patterns:
-                matches = re.findall(pattern, clean_response, re.DOTALL)      
-                for match in matches:
-                    try:
-                        parsed = json.loads(match.strip())
+            matches_to_remove = []
+            
+            # Mendeteksi kandidat JSON menggunakan balanced brace matching
+            def extract_json_candidates(text):
+                candidates = []
+                for i in range(len(text)):
+                    if text[i] == '{':
+                        depth = 0
+                        for j in range(i, len(text)):
+                            if text[j] == '{':
+                                depth += 1
+                            elif text[j] == '}':
+                                depth -= 1
+                            
+                            if depth == 0:
+                                # Ditemukan penutup yang seimbang
+                                candidate = text[i:j+1]
+                                candidates.append((candidate, i, j+1))
+                                break
+                return candidates
+
+            # Ambil semua kandidat JSON dari teks
+            candidates = extract_json_candidates(clean_response)
+            
+            for json_str, start, end in candidates:
+                try:
+                    # Basic cleanup for common AI typos
+                    json_str_clean = json_str.strip()
+                    parsed = json.loads(json_str_clean)
+                    
+                    # Normalize format
+                    if isinstance(parsed, dict):
+                        action = parsed.get("action") or parsed.get("name")
+                        params = parsed.get("params") or parsed.get("arguments") or {}
                         
-                        # Handle pola <tool_call> {"name": "...", "arguments": {...}}
-                        if "name" in parsed and "arguments" in parsed:
-                            transformed = {
-                                "action": parsed["name"],
-                                "params": parsed["arguments"]
-                            }
-                            function_calls.append(transformed)
-                            clean_response = clean_response.replace(match, "").strip()
-                            # Strip the XML tag as well if present
-                            clean_response = re.sub(r'<tool_call>.*?</tool_call>', '', clean_response, flags=re.DOTALL)
-                        elif isinstance(parsed, dict) and "action" in parsed: 
-                            function_calls.append(parsed)
-                            clean_response = clean_response.replace(match, "").strip()
-                    except json.JSONDecodeError:
-                        continue
+                        if action:
+                            function_calls.append({
+                                "action": action,
+                                "params": params
+                            })
+                            # Tandai untuk dihapus nanti (simpan tuple start, end)
+                            matches_to_remove.append((start, end))
+                except json.JSONDecodeError:
+                    continue
+            
+            # Hapus JSON yang berhasil diparse dari clean_response (Hapus dari belakang agar index tidak geser)
+            matches_to_remove.sort(key=lambda x: x[0], reverse=True)
+            for start, end in matches_to_remove:
+                # Pastikan kita tidak menghapus bagian yang sama berulang kali jika ada overlap
+                # (Sederhananya: replace string asli dari teks)
+                json_part = clean_response[start:end]
+                clean_response = clean_response.replace(json_part, "").strip()
         
+        # Final cleanup: Remove XML tags and markdown blocks
+        clean_response = re.sub(r'<tool_call>.*?</tool_call>', '', clean_response, flags=re.DOTALL)
+        clean_response = re.sub(r'```json.*?```', '', clean_response, flags=re.DOTALL)
         clean_response = re.sub(r'\n\s*\n', '\n', clean_response).strip()
         
         return function_calls, clean_response
